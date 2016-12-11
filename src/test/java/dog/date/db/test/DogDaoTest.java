@@ -18,7 +18,6 @@ public class DogDaoTest extends TestCase {
 	public void setUp() {
 		dog = new Dog("54947df8-0e9e-4471-a2f9-9af509fb5889","Dachshund", 12, 6, 2);
 		dogDao = new DogDao();
-		dogDao.createDog(dog);
 	}
 	
 	@After
@@ -31,6 +30,7 @@ public class DogDaoTest extends TestCase {
 	@Test
 	public void createDogTest() {
 		// TODO: Code create method
+		dogDao.createDog(dog);
 		Dog actual = dogDao.readDog(dog.getUid());
 		
 		Assert.assertEquals(dog.getBreed(), actual.getBreed());

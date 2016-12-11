@@ -1,6 +1,5 @@
 package dog.date.models;
 
-import java.util.UUID;
 
 /**
  * 
@@ -40,6 +39,14 @@ public class Owner {
 	}
 	public void setUid(String uid) {
 		this.uid = uid;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 }

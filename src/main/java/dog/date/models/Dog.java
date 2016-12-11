@@ -1,6 +1,5 @@
 package dog.date.models;
 
-import java.util.UUID;
 
 /**
  * Dog
