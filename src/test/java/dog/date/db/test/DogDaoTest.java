@@ -11,7 +11,7 @@ import junit.framework.TestCase;
 
 public class DogDaoTest extends TestCase {
 
-	private DogDao dogDao; // System under test
+	private DogDao dogDao; // System under test==
 	private Dog dog; // Test object
 	
 	@Before
@@ -33,17 +33,20 @@ public class DogDaoTest extends TestCase {
 		dogDao.createDog(dog);
 		Dog actual = dogDao.readDog(dog.getUid());
 		
-		Assert.assertEquals(dog.getBreed(), actual.getBreed());
-		Assert.assertTrue(dog.getHeight() == actual.getHeight());
-		Assert.assertTrue(dog.getWeight() == actual.getWeight());
-		Assert.assertTrue(dog.getAge() == actual.getAge());
-		
+		Assert.assertTrue(null != actual.getBreed());
 	}
 	
 	@Test
 	public void readDogTest() {
 		// TODO: Code read method
+		dogDao.createDog(dog);
+		Dog actual = dogDao.readDog(dog.getUid());
 		
+		Assert.assertEquals(dog.getUid(), actual.getUid());
+		Assert.assertEquals(dog.getBreed(), actual.getBreed());
+		Assert.assertTrue(dog.getHeight() == actual.getHeight());
+		Assert.assertTrue(dog.getWeight() == actual.getWeight());
+		Assert.assertTrue(dog.getAge() == actual.getAge());	
 	}
 	
 	@Test
@@ -54,5 +57,11 @@ public class DogDaoTest extends TestCase {
 	@Test
 	public void deleteDogTest() {
 		// TODO: Code delete method
+		// Test may change with implementation.
+		dogDao.createDog(dog);
+		Assert.assertTrue(dogDao.readDog(dog.getUid()) != null);
+		dogDao.deleteDog(dog.getUid());
+		Assert.assertTrue(dogDao.readDog(dog.getUid()) == null);
+		
 	}
 }
