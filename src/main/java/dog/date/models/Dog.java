@@ -2,19 +2,24 @@ package dog.date.models;
 
 import java.util.UUID;
 
+/**
+ * Dog
+ * 
+ * @author Redbird1
+ *
+ */
 public class Dog {
 	
 	private static final long serialVersionUID = 42L;
 	
 	private UUID uid;
-	private String name;
 	private String breed;
 	private double height;
 	private double weight;
 	private int age; // Human Years
 	
 	/**
-	 * Default constructor
+	 * Default constructor for empty instance.
 	 */
 	public Dog() {
 		
@@ -23,9 +28,8 @@ public class Dog {
 	/**
 	 * Initializes object with a unique id.
 	 */
-	public Dog(UUID uid, String name, double height, double weight, int age) {
+	public Dog(UUID uid, double height, double weight, int age) {
 		this.uid = uid;
-		this.name = name;
 		this.height = height;
 		this.weight = weight;
 		this.age = age;
@@ -34,8 +38,7 @@ public class Dog {
 	/**
 	 * Initializes object without a unique id.
 	 */
-	public Dog(String name, String breed, double height, double weight, int age) {
-		this.name = name;
+	public Dog(String breed, double height, double weight, int age) {
 		this.breed = breed;
 		this.height = height;
 		this.weight = weight;
@@ -49,15 +52,7 @@ public class Dog {
 	public void setUid(UUID uid) {
 		this.uid = uid;
 	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
+	
 	public String getBreed() {
 		return breed;
 	}
