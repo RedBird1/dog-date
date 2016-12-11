@@ -2,11 +2,8 @@ package dog.date.models;
 
 
 /**
- * <p> A profile belongs to a dog. </p>
- * 
- * <p>The profile contains information about a specific dog.</p>
- * 
- * <p>These characteristics include name, city, state, and zip. </p>
+ * <p> A profile belongs to a dog. The profile contains information about a specific dog.</p>
+ * <p>These characteristics include name, city, state, and zip-code. </p>
  * 
  * @author RedBird1
  *

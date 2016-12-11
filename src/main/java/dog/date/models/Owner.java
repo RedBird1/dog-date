@@ -8,9 +8,10 @@ package dog.date.models;
  */
 public class Owner {
 
+	private static final long serialVersionUID = 43L;
+
 	private String uid;
 	private String name;
-	private static final long serialVersionUID = 43L;
 	
 	/**
 	 * Default constructor for empty instance.
