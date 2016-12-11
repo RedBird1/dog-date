@@ -1,7 +1,6 @@
-package dog.date.dao.test;
+package dog.date.db.test;
 
-import dog.date.dao.DogDao;
-
+import dog.date.db.DogDao;
 import junit.framework.TestCase;
 
 public class DogDaoTest extends TestCase {

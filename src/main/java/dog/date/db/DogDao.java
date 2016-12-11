@@ -1,4 +1,4 @@
-package dog.date.dao;
+package dog.date.db;
 
 import dog.date.models.Dog;
 

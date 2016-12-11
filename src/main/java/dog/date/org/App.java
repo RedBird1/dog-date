@@ -1,7 +1,7 @@
 package dog.date.org;
 
 /**
- * Hello world!
+ * Main class that is pending deletion. 
  *
  */
 public class App 
