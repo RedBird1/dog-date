@@ -12,7 +12,7 @@ public class Dog {
 	
 	private static final long serialVersionUID = 42L;
 	
-	private UUID uid;
+	private String uid;
 	private String breed;
 	private double height;
 	private double weight;
@@ -28,7 +28,7 @@ public class Dog {
 	/**
 	 * Initializes object with a unique id.
 	 */
-	public Dog(UUID uid, double height, double weight, int age) {
+	public Dog(String uid, String breed, double height, double weight, int age) {
 		this.uid = uid;
 		this.height = height;
 		this.weight = weight;
@@ -45,11 +45,11 @@ public class Dog {
 		this.age = age;
 	}
 	
-	public UUID getUid() {
+	public String getUid() {
 		return uid;
 	}
 
-	public void setUid(UUID uid) {
+	public void setUid(String uid) {
 		this.uid = uid;
 	}
 	

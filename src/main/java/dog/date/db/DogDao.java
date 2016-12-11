@@ -17,32 +17,32 @@ public class DogDao {
 	private static final long serialVersionUID = 10L;
 
 	/**
-	 * <p></p> 
+	 * <p>Creates a dog record in the database</p> 
 	 */
 	public void createDog(Dog dog) {
 		// TODO: create a dog record
 	}
 	
 	/**
-	 * <p></p>
+	 * <p>Read a dog record from the database</p>
 	 * @return
 	 */
-	public Dog readDog(UUID dogUid) {
+	public Dog readDog(String dogUid) {
 		// TODO: read a dog record
 		return null;
 	}
 	
 	/**
-	 * <p></p> 
+	 * <p>Updates a dog record in the database</p> 
 	 */
 	public void updateDog(Dog dog) {
 		// TODO: update a dog record
 	}
 	
 	/**
-	 * <p></p>
+	 * <p>Deletes a dog record from the database</p>
 	 */
-	public void deleteDog() {
+	public void deleteDog(String dogUid) {
 		// TODO: delete a dog record
 	}
 }
