@@ -9,9 +9,14 @@ import dog.date.db.DogDao;
 import dog.date.models.Dog;
 import junit.framework.TestCase;
 
+/**
+ * 
+ * @author RedBird1
+ *
+ */
 public class DogDaoTest extends TestCase {
 
-	private DogDao dogDao; // System under test==
+	private DogDao dogDao; // System under test
 	private Dog dog; // Test object
 	
 	@Before
@@ -62,6 +67,5 @@ public class DogDaoTest extends TestCase {
 		Assert.assertTrue(dogDao.readDog(dog.getUid()) != null);
 		dogDao.deleteDog(dog.getUid());
 		Assert.assertTrue(dogDao.readDog(dog.getUid()) == null);
-		
 	}
 }

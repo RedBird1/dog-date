@@ -1,5 +1,10 @@
 package dog.date.models;
 
+/**
+ * 
+ * @author RedBird1
+ *
+ */
 public class User {
 	
 	private static final long serialVersionUID = 25L;
