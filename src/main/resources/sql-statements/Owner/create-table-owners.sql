@@ -1,0 +1,6 @@
+CREATE TABLE OWNERS 
+(
+	owner# CHAR(36),
+	name VARCHAR2(40),
+		CONSTRAINT OWNERS_owner#_pk PRIMARY KEY (owner#)
+);
