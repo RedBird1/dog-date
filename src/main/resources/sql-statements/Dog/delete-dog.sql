@@ -1,0 +1,1 @@
+DELETE IN DOGS WHERE uid = ?;

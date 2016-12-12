@@ -1,3 +1,4 @@
+/* Creates dog table with constraints*/
 CREATE TABLE DOGS
 (
 	uid CHAR(36),
