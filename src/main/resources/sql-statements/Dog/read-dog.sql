@@ -1,2 +1,2 @@
-SELECT uid, breed, height, weight, age FROM DOGS 
-	WHERE uid = ?;
+SELECT dog#, breed, height, weight, age FROM DOGS 
+	WHERE dog# = ?;

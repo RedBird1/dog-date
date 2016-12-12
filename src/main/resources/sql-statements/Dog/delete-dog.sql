@@ -1,1 +1,1 @@
-DELETE IN DOGS WHERE uid = ?;
+DELETE IN DOGS WHERE dog# = ?;
