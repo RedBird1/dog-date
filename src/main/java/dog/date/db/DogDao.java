@@ -14,7 +14,14 @@ import dog.date.models.Dog;
 public class DogDao {
 	
 	private static final long serialVersionUID = 10L;
-
+	
+	// TODO: Implement prepared SQL statements
+	// private SQL createDog;
+	// private SQL readDog;
+	// private SQL updateDog;
+	// private SQL deleteDog;
+	
+	
 	/**
 	 * <p>Creates a dog record in the database</p> 
 	 */

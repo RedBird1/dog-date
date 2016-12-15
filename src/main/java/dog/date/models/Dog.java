@@ -12,6 +12,7 @@ public class Dog {
 	private static final long serialVersionUID = 42L;
 	
 	private String uid;
+	private String ownerUid;
 	private String breed;
 	private double height;
 	private double weight;
@@ -50,6 +51,14 @@ public class Dog {
 
 	public void setUid(String uid) {
 		this.uid = uid;
+	}
+	
+	public String getOwnerUid() {
+		return ownerUid;
+	}
+	
+	public void setOwnerUid(String ownerUid) {
+		this.ownerUid = ownerUid;
 	}
 	
 	public String getBreed() {
