@@ -9,5 +9,6 @@ public class App
     public static void main( String[] args )
     {
         // TODO: Delete main class
+    	System.out.println("Main method started");
     }
 }

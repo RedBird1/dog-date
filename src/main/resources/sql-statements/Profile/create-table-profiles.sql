@@ -1,4 +1,3 @@
-/* Creates PROFILES table */
 CREATE TABLE PROFILES
 (
 	profile# CHAR (36),

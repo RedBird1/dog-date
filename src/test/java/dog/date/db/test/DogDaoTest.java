@@ -21,6 +21,7 @@ public class DogDaoTest extends TestCase {
 	
 	@Before
 	public void setUp() {
+		System.out.println("hello world");
 		dog = new Dog("54947df8-0e9e-4471-a2f9-9af509fb5889","Dachshund", 12, 6, 2);
 		dogDao = new DogDao();
 	}
@@ -34,6 +35,8 @@ public class DogDaoTest extends TestCase {
 	
 	@Test
 	public void createDogTest() {
+
+		System.out.println("hello world");
 		// TODO: Code create method
 		dogDao.createDog(dog);
 		Dog actual = dogDao.readDog(dog.getUid());
@@ -46,7 +49,6 @@ public class DogDaoTest extends TestCase {
 		// TODO: Code read method
 		dogDao.createDog(dog);
 		Dog actual = dogDao.readDog(dog.getUid());
-		
 		Assert.assertEquals(dog.getUid(), actual.getUid());
 		Assert.assertEquals(dog.getBreed(), actual.getBreed());
 		Assert.assertTrue(dog.getHeight() == actual.getHeight());

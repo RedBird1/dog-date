@@ -17,7 +17,7 @@ public class DogMapper {
 	 * mapRow method transforms a record from the DOGS table into a java object.
 	 * 
 	 * @param rs
-	 * @return
+	 * @return {@link Dog}
 	 * @throws SQLException
 	 */
 	public Dog mapRow(ResultSet rs) throws SQLException {
@@ -30,5 +30,5 @@ public class DogMapper {
 		dog.setAge(rs.getInt("age"));
 		return dog;
 	}
-
+	
 }

@@ -9,7 +9,7 @@ package dog.date.models;
  */
 public class Dog {
 	
-	private static final long serialVersionUID = 42L;
+	private static final long serialVersionUID = 42767868L;
 	
 	private String uid;
 	private String ownerUid;
