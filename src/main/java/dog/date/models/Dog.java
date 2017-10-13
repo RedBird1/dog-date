@@ -16,7 +16,17 @@ public class Dog {
 	private String breed;
 	private double height;
 	private double weight;
-	private int age; // Human Years
+	private int age;
+	
+	// TODO: Mke getters and setters 
+	private String eyeColor;
+	private String coatColor;
+	private String sex;
+	
+	// limit by characters
+	private String bio;
+	
+	
 	
 	/**
 	 * Default constructor for empty instance.
